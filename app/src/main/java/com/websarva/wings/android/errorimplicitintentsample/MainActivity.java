@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         _locationRequest = builder.build();
         _onUpdateLocation = new OnUpdateLocation();
 
-    }
+
 
     public void onMapSearchButtonClick(View view) {
         EditText etSearchWord = findViewById(R.id.etSearchWord);
@@ -139,5 +139,6 @@ public class MainActivity extends AppCompatActivity {
             _fusedLocationClient.requestLocationUpdates(_locationRequest, _onUpdateLocation, Looper.getMainLooper());
         }
 
+    }
     }
 }
